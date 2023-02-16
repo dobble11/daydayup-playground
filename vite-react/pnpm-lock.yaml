@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': ^7.20.12
@@ -37,7 +37,7 @@ devDependencies:
   '@babel/preset-env': 7.20.2_@babel+core@7.20.12
   '@babel/preset-react': 7.18.6_@babel+core@7.20.12
   '@babel/preset-typescript': 7.18.6_@babel+core@7.20.12
-  '@testing-library/react': 13.4.0_react-dom@18.2.0+react@18.2.0
+  '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@types/expect-puppeteer': 5.0.2
   '@types/jest': 29.4.0
   '@types/jest-environment-puppeteer': 5.0.3
@@ -1923,7 +1923,7 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/react/13.4.0_react-dom@18.2.0+react@18.2.0:
+  /@testing-library/react/13.4.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-sXOGON+WNTh3MLE9rve97ftaZukN3oNf2KjDy7YTx6hcTO2uuLHuCGynMDhFwGw/jYf4OJ2Qk0i4i79qMNNkyw==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -2546,7 +2546,7 @@ packages:
     resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
     dev: true
 
-  /chromium-bidi/0.4.3_devtools-protocol@0.0.1094867:
+  /chromium-bidi/0.4.3_6o5gdkn34s2j2m26x63ssheuqa:
     resolution: {integrity: sha512-A40H1rdpJqkTdnGhnYDzMhtDdIbkXNFj2wgIfivMXL7LyHFDmBtv1hdyycDhnxtYunbPLDZtTs/n+ZT5j7Vnew==}
     peerDependencies:
       devtools-protocol: '*'
@@ -4667,7 +4667,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      chromium-bidi: 0.4.3_devtools-protocol@0.0.1094867
+      chromium-bidi: 0.4.3_6o5gdkn34s2j2m26x63ssheuqa
       cross-fetch: 3.1.5
       debug: 4.3.4
       devtools-protocol: 0.0.1094867
