@@ -1,8 +1,9 @@
 module.exports = {
   launch: {
-    dumpio: true,
     headless: false,
-    product: 'chrome',
   },
-  browserContext: 'default',
+  server: {
+    command: 'pnpm dev',
+    port: 5173,
+  },
 };
