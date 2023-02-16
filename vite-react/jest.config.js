@@ -7,10 +7,6 @@
 export default {
   // Automatically clear mock calls, instances, contexts and results before every test
   clearMocks: true,
-
-  collectCoverage: false,
-
-  coverageDirectory: 'coverage',
   // A list of paths to directories that Jest should use to search for files in
   roots: ['src'],
   // The test environment that will be used for testing

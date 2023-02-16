@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "test:coverage": "jest --coverage",
     "test": "jest --watchAll",
     "test:e2e": "cross-env JEST_PUPPETEER_CONFIG=jest-puppeteer.config.cjs jest -c jest.config.e2e.js"
   },
