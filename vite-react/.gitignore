@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 coverage
+junit.xml
+je2e.xml

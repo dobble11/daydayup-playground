@@ -7,9 +7,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test:coverage": "jest --coverage",
     "test": "jest --watchAll",
-    "test:e2e": "cross-env JEST_PUPPETEER_CONFIG=jest-puppeteer.config.cjs jest -c jest.config.e2e.js"
+    "test:e2e": "cross-env JEST_PUPPETEER_CONFIG=jest-puppeteer.config.cjs jest -c jest.config.e2e.js",
+    "test:ci": "jest --ci --coverage --runInBand --reporters=default --reporters=jest-junit",
+    "test:e2e:ci": "cross-env CI=true JEST_JUNIT_OUTPUT_NAME=je2e.xml npm run test:e2e -- --runInBand --reporters=default --reporters=jest-junit ; node ./post-message.js"
   },
   "dependencies": {
     "react": "^18.2.0",

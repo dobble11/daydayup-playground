@@ -14,4 +14,5 @@ export default {
   moduleNameMapper: {
     '^.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2|svg)$': 'jest-transform-stub',
   },
+  coverageReporters: ['html', 'cobertura', 'text'],
 };
