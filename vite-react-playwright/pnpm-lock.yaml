@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': ^7.21.0
@@ -32,7 +32,7 @@ devDependencies:
   '@babel/preset-react': 7.18.6_@babel+core@7.21.0
   '@babel/preset-typescript': 7.21.0_@babel+core@7.21.0
   '@playwright/test': 1.31.2
-  '@testing-library/react': 14.0.0_react-dom@18.2.0+react@18.2.0
+  '@testing-library/react': 14.0.0_biqbaboplfbrettd7655fr4n2y
   '@types/jest': 29.4.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
@@ -1858,7 +1858,7 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/react/14.0.0_react-dom@18.2.0+react@18.2.0:
+  /@testing-library/react/14.0.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-S04gSNJbYE30TlIMLTzv6QCTzt9AqIF5y6s6SzVFILNcNvbV/jU96GeiTPillGQo+Ny64M/5PV7klNYYgv5Dfg==}
     engines: {node: '>=14'}
     peerDependencies:
