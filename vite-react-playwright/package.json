@@ -10,7 +10,7 @@
     "test": "jest --watchAll",
     "test:e2e": "playwright test --headed",
     "test:ci": "jest --ci --coverage --runInBand --reporters=default --reporters=jest-junit",
-    "test:e2e:ci": "cross-env CI=true playwright test ; node ./post-message.js"
+    "test:e2e:ci": "playwright test ; node ./post-message.js"
   },
   "dependencies": {
     "react": "^18.2.0",
