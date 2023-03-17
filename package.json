@@ -1,5 +1,9 @@
 {
   "scripts": {
-    "test": "node ./test.js"
+    "test": "node ./test.js",
+    "vitest": "vitest test.test.js --globals"
+  },
+  "dependencies": {
+    "vitest": "^0.29.3"
   }
 }

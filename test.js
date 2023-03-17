@@ -49,3 +49,4 @@ LRUCache.prototype.makeRecently = function (key) {
  * var param_1 = obj.get(key)
  * obj.put(key,value)
  */
+export default LRUCache;
