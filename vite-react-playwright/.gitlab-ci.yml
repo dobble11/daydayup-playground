@@ -24,6 +24,7 @@ test:
     paths:
       - coverage
       - playwright-report
+      - test-results
 
 pages:
   extends: .testTpl
