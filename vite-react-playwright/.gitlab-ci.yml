@@ -12,9 +12,9 @@ test:
   image: mcr.microsoft.com/playwright:v1.31.0-focal
   stage: test
   script:
-    - 'yarn'
-    - 'yarn test:ci'
-    - 'yarn test:e2e:ci'
+    - 'pnpm'
+    - 'pnpm test:ci'
+    - 'pnpm test:e2e:ci'
   artifacts:
     reports:
       cobertura: coverage/cobertura-coverage.xml
