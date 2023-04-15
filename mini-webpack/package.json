@@ -1,0 +1,16 @@
+{
+  "name": "mini-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4"
+  }
+}
