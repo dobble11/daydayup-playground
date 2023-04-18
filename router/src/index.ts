@@ -31,4 +31,4 @@ e.on('message', function () {
   console.log(this);
 });
 
-e.trigger('message', undefined);
+e.trigger('message', null);
