@@ -49,4 +49,17 @@ LRUCache.prototype.makeRecently = function (key) {
  * var param_1 = obj.get(key)
  * obj.put(key,value)
  */
-export default LRUCache;
+// export default LRUCache;
+
+lru = new LRUCache(2);
+function makeCounter() {
+  let count = 0;
+  let b = 1;
+
+  return function () {
+    return count++;
+  };
+}
+
+let counter = makeCounter();
+console.dir(counter);

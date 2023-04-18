@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>router</title>
+  </head>
+  <body>
+    <script>
+      function push() {
+        history.pushState('1', '', '/a1');
+      }
+      function hashChange() {
+        window.location.hash = '/a2';
+      }
+    </script>
+    <p>history</p>
+    <button onclick="push()">前进</button>
+    <p>hash</p>
+    <button onclick="hashChange()">前进</button>
+    <script src="./src/index.ts"></script>
+  </body>
+</html>
