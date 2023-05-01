@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>两栏布局</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .row > :first-child {
+        width: 100px;
+        height: 100px;
+        border: 2px solid rebeccapurple;
+      }
+      .row > :nth-child(2) {
+        border: 2px solid orange;
+        height: 100px;
+      }
+
+      .float {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <p>float + BFC 或 margin-left （父元素高度塌陷问题）</p>
+    <div class="row">
+      <div class="float"></div>
+      <div style="display: flow-root"></div>
+    </div>
+    <p>absolute + margin-left</p>
+    <div class="row" style="position: relative">
+      <div style="position: absolute"></div>
+      <div style="margin-left: 100px"></div>
+    </div>
+    <p>inline-block（内联块之间空白符会当作一个字符，可以通过 font-size:0 消除）</p>
+    <div class="row" style="font-size: 0">
+      <div style="display: inline-block"></div>
+      <div style="display: inline-block; width: calc(100% - 100px)"></div>
+    </div>
+    <p>table（未设置宽的一列自动填充剩余空间）</p>
+    <div class="row" style="display: table; width: 100%">
+      <div style="display: table-cell"></div>
+      <div style="display: table-cell"></div>
+    </div>
+    <p>flex</p>
+    <div class="row" style="display: flex">
+      <div></div>
+      <div style="flex-grow: 1"></div>
+    </div>
+    <p>grid</p>
+    <div class="row" style="display: grid; grid-template-columns: 100px auto">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
