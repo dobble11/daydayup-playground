@@ -45,6 +45,10 @@ const config = {
   devServer: {
     static: './dist',
   },
+  watchOptions: {
+    // 默认为空，不监听的 node_modules 目录下的文件
+    ignored: /node_modules/,
+  },
 };
 
 module.exports = config;
