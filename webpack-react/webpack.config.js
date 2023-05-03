@@ -2,6 +2,7 @@ const path = require('path');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
 
 /** @type {import('webpack').Configuration} */
@@ -41,7 +42,8 @@ const config = {
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash:8].css',
     }),
-  ],
+    devMode && new ReactRefreshWebpackPlugin(),
+  ].filter(Boolean),
   devServer: {
     static: './dist',
   },
