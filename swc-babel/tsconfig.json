@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "outDir": "lib",
+    "baseUrl": ".",
+    "emitDeclarationOnly": true
+  },
+  "include": ["src"]
+}
