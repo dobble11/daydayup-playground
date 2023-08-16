@@ -1,9 +1,10 @@
 {
   "scripts": {
-    "test": "node ./test.js",
+    "test": "node-dev --respawn ./test.js",
     "vitest": "vitest test.test.js --globals"
   },
   "dependencies": {
+    "node-dev": "^8.0.0",
     "vitest": "^0.29.3"
   }
 }
