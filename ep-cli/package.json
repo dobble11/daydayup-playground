@@ -1,0 +1,41 @@
+{
+  "name": "ep-cli",
+  "version": "0.1.2",
+  "type": "module",
+  "description": "ep cli",
+  "bin": {
+    "ep": "./bin/ep.js"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "rimraf dist && tsc",
+    "publish:beta": "npm run build && npm publish --tag beta",
+    "publish:latest": "npm run build && npm publish"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "commander": "^12.0.0",
+    "picocolors": "^1.0.0",
+    "prompts": "^2.4.2",
+    "vite": "^5.2.11"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.2",
+    "@types/prompts": "^2.4.9",
+    "rimraf": "^5.0.7",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
